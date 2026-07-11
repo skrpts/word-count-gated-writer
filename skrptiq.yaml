@@ -1,0 +1,59 @@
+# --- Identity ---
+id: "acb4fbf8-2a38-411b-b98d-b275b21433fa"
+name: "word-count-gated-writer"
+display_name: "Word-Count Gated Writer"
+description: "Checks a draft against a word-count range with a deterministic builtin gate, then revises it to fit — because language models cannot reliably count their own words."
+version: "1.0.1"
+engine: ">=0.1.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/word-count-gated-writer"
+
+# --- Discovery (Hub) ---
+category: "content-creator"
+tags:
+  - "writing"
+  - "builtin"
+  - "word-count"
+
+# --- Dependencies ---
+dependencies:
+  - id: "fcab9536-a13e-49c9-b0c3-bb3097682e69"
+    name: "llm-service"
+    version: 1.0.2
+    checksum: "sha256:292d811ee78ed4f4f18c20299115bb4df01150c3230feca30177a76b7f272cc6"
+
+# --- Requirements ---
+requires:
+  services:
+    - "llm-service"
+
+# --- Contents ---
+contents:
+  skills: 1
+  prompts: 1
+  workflows: 1
+  services: 0
+  sources: 0
+  documents: 0
+  assets: 0
+  total: 3
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-11T22:43:26.579Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/word-count-gated-writer/security"
