@@ -3,7 +3,7 @@ id: "acb4fbf8-2a38-411b-b98d-b275b21433fa"
 name: "word-count-gated-writer"
 display_name: "Word-Count Gated Writer"
 description: "Checks a draft against a word-count range with a deterministic builtin gate, then revises it to fit — because language models cannot reliably count their own words."
-version: "1.0.1"
+version: "1.0.2"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -46,7 +46,7 @@ contents:
 
 security:
   status: "pass"
-  scanned_at: "2026-07-19T13:49:16.952Z"
+  scanned_at: "2026-10-21T21:31:22.550Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

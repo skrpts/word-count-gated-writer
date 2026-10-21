@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.0.2
+GH#1100 bucket 1 — declare the `draft` input on the `revise-draft` prompt node, which is the node that references it (`workflow.input_undeclared`). Declaration only — no behaviour change.
+
 ## v1.0.1
 GH#820 — migrate the builtin step to the node-less `local.builtin` shape (#802 D1b). Replace the `count-words` backing skill-node + `uses` edge with a node-less execution entry (`id: word-count-gate`, `input`, `context.operation`, `output`); downstream reference `{{steps.Count Words.output}}` → `{{steps.word-count-gate.output}}`. Deterministic behavior unchanged; back-compat holds until #802 B6. contents skills 2→1.
 

@@ -7,6 +7,13 @@ tags: [Production, Writing]
 connections:
   - target: revise-to-length
     type: derived_from
+inputs:
+  draft:
+    label: "Draft"
+    description: "The draft text to check and revise"
+    required: true
+    type: "text"
+    example: "A 180-word blog intro…"
 metadata:
   output_format: markdown
   prompt_type: task
